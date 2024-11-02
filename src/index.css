@@ -57,3 +57,12 @@
     @apply w-full; /* Change color on hover */
   }
   
+.readmore-reverse::before {
+  content: '';
+  @apply absolute bg-black h-[1px] w-full top-7;
+  transition: ease-in-out 0.3s;
+}
+.readmore-reverse:hover::before {
+  @apply w-0
+}
+
