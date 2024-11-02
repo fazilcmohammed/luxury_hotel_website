@@ -1,11 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-*{
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.text-animate {
+  animation: slideIn 0.5s ease forwards; /* Adjust duration as needed */
+}
+
+.nav-link-underline-white::before {
+  content: "";
+  @apply absolute bg-white h-0.5 w-0 top-5;
+  transition: ease-in-out 0.3s; /* Add transition for smooth effect */
+}
+.nav-link-underline-white:hover::before {
+  @apply w-full; /* Change color on hover */
+}
+
+.nav-link-underline-black::before {
+    content: "";
+    @apply absolute bg-black h-0.5 w-0 top-5;
+    transition: ease-in-out 0.3s;
+}
+.nav-link-underline-black:hover::before {
+    @apply w-full
+}
+.section-heading::after{
+    content: '';
+    @apply absolute w-14 bg-black h-[1px] bottom-5 left-[50%];
+    transform: translateX(-50%);
+}
+
+.button-underline::before {
+    content: "";
+    @apply absolute bg-black h-0.5 w-0 top-10;
+    transition: ease-in-out 0.3s; /* Add transition for smooth effect */
+  }
+  .button-underline:hover::before {
+    @apply w-full; /* Change color on hover */
+  }
+  

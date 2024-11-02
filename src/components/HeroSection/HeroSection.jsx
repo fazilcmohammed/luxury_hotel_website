@@ -2,9 +2,7 @@ import React, { useState, useEffect } from 'react';
 import slidingImg1 from '../../assets/images/room_1_a.jpg';
 import slidingImg2 from '../../assets/images/slider_1.jpg';
 import slidingImg3 from '../../assets/images/slider_2.jpg';
-import { MdOutlineKeyboardArrowRight } from "react-icons/md";
-import { MdOutlineKeyboardArrowLeft } from "react-icons/md";
-
+import { MdOutlineKeyboardArrowRight, MdOutlineKeyboardArrowLeft } from "react-icons/md";
 
 const images = [slidingImg1, slidingImg2, slidingImg3];
 
@@ -41,7 +39,7 @@ const HeroSection = () => {
   };
 
   return (
-    <div className="relative w-full h-[550px] overflow-hidden">
+    <div className="relative top-0 w-full h-[550px] overflow-hidden -z-10">
       {/* Render the current image as a background */}
       <div
         className={`w-full h-full bg-cover bg-center transition-opacity duration-1000 ease-in-out ${
@@ -52,8 +50,12 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-black opacity-50"></div>
         {/* Overlay and Content */}
         <div className="flex items-center justify-center h-full bg-black bg-opacity-30">
-          <h1 className="text-4xl font-cormorant md:text-6xl text-white font-bold transition-transform duration-700 ease-in-out transform">
-            {currentIndex === 0 && 'Away from the Hustle and Bustle of City Life'}
+          <h1 className={`text-4xl font-cormorant md:text-6xl text-white font-bold transition-transform duration-700 ease-in-out transform ${fade ? 'text-animate' : ''}`}>
+            {currentIndex === 0 && (
+              <>
+              Away from the Hustle <br /> and Bustle of City Life
+            </>
+            )}
             {currentIndex === 1 && 'Experience Luxury Living'}
             {currentIndex === 2 && 'Your Dream Getaway'}
           </h1>
@@ -64,13 +66,13 @@ const HeroSection = () => {
           onClick={handlePreviousSlide}
           className="absolute left-5 top-1/2 transform -translate-y-1/2 text-white text-4xl p-2 bg-opacity-50 rounded-full"
         >
-          <MdOutlineKeyboardArrowLeft/>
+          <MdOutlineKeyboardArrowLeft />
         </button>
         <button
           onClick={handleNextSlide}
           className="absolute right-5 top-1/2 transform -translate-y-1/2 text-white text-4xl p-2  bg-opacity-50 rounded-full"
         >
-          <MdOutlineKeyboardArrowRight/>
+          <MdOutlineKeyboardArrowRight />
         </button>
 
         {/* Pagination Dots */}
