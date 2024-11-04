@@ -36,7 +36,7 @@
 
 .nav-link-underline-black::before {
     content: "";
-    @apply absolute bg-black h-0.5 w-0 top-5;
+    @apply absolute bg-orange-500  h-0.5 w-0 bottom-0;
     transition: ease-in-out 0.3s;
 }
 .nav-link-underline-black:hover::before {
@@ -46,6 +46,12 @@
     content: '';
     @apply absolute w-14 bg-black h-[1px] bottom-5 left-[50%];
     transform: translateX(-50%);
+}
+
+.section-heading-left::after{
+  content: '';
+  @apply absolute w-14 bg-black h-[1px] bottom-8 left-8;
+  transform: translateX(-50%);
 }
 
 .button-underline::before {

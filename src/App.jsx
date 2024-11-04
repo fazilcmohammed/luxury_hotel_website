@@ -6,6 +6,9 @@ import HeroSection from './components/HeroSection/HeroSection'
 import Background from './components/Background/Background'
 import FeaturedRooms from './components/FeaturedRooms/FeaturedRooms'
 import Amenities from './components/Amenities/Amenities'
+import NewsEvents from './components/NewsEvents/NewsEvents'
+import ForRequest from './components/ForRequest/ForRequest'
+import Footer from './components/Footer/Footer'
 
 function App() {
 
@@ -15,7 +18,9 @@ function App() {
       <HeroSection/>
       <FeaturedRooms/>
       <Amenities/>
-      
+      <NewsEvents/>
+      <ForRequest/>
+      <Footer/>
     </>
   )
 }

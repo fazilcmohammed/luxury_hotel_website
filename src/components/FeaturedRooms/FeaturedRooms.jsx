@@ -10,16 +10,16 @@ const FeaturedRooms = () => {
       <h1 className="section-heading relative text-[3rem] font-cormorant font-bold mb-20 py-10 text-center">
         Featured Rooms
       </h1>
-      <div className="grid grid-cols-2 items-center justify-center my-20 gap-60">
+      <div className="grid grid-cols-1 lg:grid-cols-2 items-center justify-center md:my-20  gap-10 md:gap-60">
         <div className="flex">
-          <img src={img1} alt="" className="w-80 " />
-          <img src={img2} alt="" className="w-80 " />
+          <img src={img1} alt="" className="w-[200px] md:w-80 " />
+          <img src={img2} alt="" className="w-[200px] md:w-80 " />
         </div>
-        <div>
-          <h1 className="text-[4rem] font-cormorant font-bold leading-tight mb-8">
+        <div className="flex flex-col md:flex-row items-center justify-center">
+          <h1 className="text-[4rem] text-center md:text-left font-cormorant font-bold leading-tight mb-8">
             King <br /> Bedroom
           </h1>
-          <p className="text-gray-500 font-light w-[75%] mb-[1rem]">
+          <p className="text-gray-500 font-light w-[75%] mb-[1rem] text-center md:text-left">
             A hotel is an establishment that provides paid lodging on a
             short-term basis. Facilities provided may range from a
             modest-quality mattress in a small room to large suites with bigger.
@@ -30,12 +30,12 @@ const FeaturedRooms = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-2 items-center justify-center my-32">
-        <div>
-          <h1 className="text-[4rem] font-cormorant font-bold leading-tight mb-8">
+      <div className="grid grid-cols-1 lg:grid-cols-2 items-center justify-center my-32 gap-10">
+        <div  className="flex flex-col md:flex-row items-center justify-center">
+          <h1 className="text-[4rem]  text-center md:text-left font-cormorant font-bold leading-tight mb-8">
             Queen & <br /> Double Bedroom
           </h1>
-          <p className="text-gray-500 font-light w-[75%] mb-[1rem]">
+          <p className="text-gray-500  text-center md:text-left font-light w-[75%] mb-[1rem]">
             A hotel is an establishment that provides paid lodging on a
             short-term basis. Facilities provided may range from a
             modest-quality mattress in a small room to large suites with bigger.
@@ -45,8 +45,8 @@ const FeaturedRooms = () => {
           </button>
         </div>
         <div className="flex">
-          <img src={img4} alt="" className="w-[280px] " />
-          <img src={img3} alt="" className="w-[280px] " />
+          <img src={img4} alt="" className="w-[200px] md:w-[280px] " />
+          <img src={img3} alt="" className="w-[200px] md:w-[280px] " />
         </div>
       </div>
     </section>
