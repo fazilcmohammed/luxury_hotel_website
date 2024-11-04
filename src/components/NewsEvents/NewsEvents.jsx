@@ -3,17 +3,17 @@ import { news_events } from "../../assets/constant";
 
 const NewsEvents = () => {
   return (
-    <section className="mx-28 flex flex-col lg:flex-row items-start justify-between py-40">
-      <div>
-        <h1 className="section-heading-left w-[350px] relative text-[3rem] font-cormorant font-bold mb-0 pb-10 text-start">
+    <section className="mx-10 md:mx-28 flex flex-col lg:flex-row items-start justify-between py-40">
+      <div className="flex flex-col ">
+        <h1 className="section-heading-left text-center md:w-[350px] relative text-[3rem] font-cormorant font-bold mb-0 pb-10 md:text-start">
           News & Events
         </h1>
-        <p className="mb-[1rem] text-gray-500">
+        <p className="mb-[1rem] text-center md:text-left text-gray-500">
           A hotel is an establishment that <br /> provides paid lodging on a short-term <br />
           basis.
         </p>
-        <button className="text-[11px] tracking-[0.2rem] py-3 font-bold uppercase relative button-underline">
-            all posts
+        <button className="text-[11px] items-center justify-center md:justify-start flex md:text-left tracking-[0.2rem] py-3 font-bold uppercase  ">
+            <a href="" className="relative button-underline">all posts</a>
           </button>
       </div>
       <div className="flex flex-col lg:flex-row gap-10 ">

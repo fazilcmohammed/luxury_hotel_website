@@ -51,8 +51,8 @@ const HeroSection = () => {
         style={{ backgroundImage: `url(${images[currentIndex]})` }}
       >
         <div className="absolute inset-0 bg-black opacity-50"></div>
-        <div className="flex items-center justify-center h-full">
-          <h1 className="text-4xl md:text-7xl z-10 text-white font-bold font-cormorant">
+        <div className="flex items-center justify-center h-full mx-20">
+          <h1 className="text-4xl md:text-7xl z-10 text-white font-bold font-cormorant text-center">
             {currentIndex === 0 && (
               <>
                 Away from the Hustle <br /> and Bustle of City Life

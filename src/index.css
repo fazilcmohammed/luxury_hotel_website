@@ -50,7 +50,7 @@
 
 .section-heading-left::after{
   content: '';
-  @apply absolute w-14 bg-black h-[1px] bottom-8 left-8;
+  @apply absolute w-14 bg-black h-[1px] md:bottom-8 md:left-8 bottom-8 left-[50%] ;
   transform: translateX(-50%);
 }
 

@@ -3,7 +3,7 @@ import { amenities } from '../../assets/constant'
 
 const Amenities = () => {
   return (
-    <section className='px-28'>
+    <section className='px-10 md:px-28'>
         <h1 className="section-heading relative text-[3rem] font-cormorant font-bold mb-20 py-10 text-center">
         Hotel Amenities
       </h1>

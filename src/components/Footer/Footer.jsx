@@ -2,26 +2,31 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-white py-16 px-28 flex flex-col lg:flex-row">
-      <div className="flex flex-col md:flex-row justify-between items-start gap-10 md:gap-40 text-gray-800">
+    <footer className="bg-white py-16 px-10 md:px-28 flex flex-col lg:flex-row">
+      <div className="flex flex-col md:flex-row justify-center md:justify-between items-start gap-10 md:gap-40 text-gray-800">
         {/* About Us Section */}
-        <div>
-          <h2 className="text-lg font-bold font-cormorant mb-4">About Us</h2>
-          <p className="text-sm mb-4">
+        <div className="flex flex-col ">
+          <h2 className="text-lg font-bold text-center md:text-left font-cormorant mb-4">
+            About Us
+          </h2>
+          <p className="text-sm mb-4 text-center md:text-left">
             A hotel is an establishment that provides paid lodging on a
             short-term basis. Facilities provided may range from a
             modest-quality.
           </p>
-          <button className="text-[11px] tracking-[0.2rem] py-3 font-bold uppercase relative button-underline">
+          <button className="text-[11px] tracking-[0.2rem] py-3 font-bold uppercase text-center md:text-left ">
+            <a href="" className="relative button-underline">
               read more
-            </button>
+            </a>
+          </button>
         </div>
 
         {/* Navigation Section */}
-        <div className="flex flex-col">
-          
+        <div className="flex flex-col items-center justify-center">
           <ul className="space-y-2">
-          <h2 className="text-lg font-bold font-cormorant mb-4">Navigation</h2>
+            <h2 className="text-lg font-bold font-cormorant mb-4">
+              Navigation
+            </h2>
             <li>
               <a href="#" className="text-sm hover:text-gray-600">
                 Home
@@ -57,7 +62,7 @@ const Footer = () => {
 
         {/* Address Section */}
         <div className="w-[100%]">
-          <div className="flex gap-20 justify-between">
+          <div className="flex gap-5 md:gap-20 justify-between">
             <div>
               <h2 className="text-lg font-bold font-cormorant mb-4">Address</h2>
               <p className="text-sm mb-2">273 South Riverview Rd.</p>
