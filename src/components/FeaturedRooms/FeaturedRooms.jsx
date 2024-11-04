@@ -15,7 +15,7 @@ const FeaturedRooms = () => {
           <img src={img1} alt="" className="w-[200px] md:w-80 " />
           <img src={img2} alt="" className="w-[200px] md:w-80 " />
         </div>
-        <div className="flex flex-col md:flex-row items-center justify-center">
+        <div className="flex flex-col items-center justify-center md:items-start">
           <h1 className="text-[4rem] text-center md:text-left font-cormorant font-bold leading-tight mb-8">
             King <br /> Bedroom
           </h1>
@@ -31,7 +31,7 @@ const FeaturedRooms = () => {
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 items-center justify-center my-32 gap-10">
-        <div  className="flex flex-col md:flex-row items-center justify-center">
+        <div  className="flex flex-col items-center justify-center md:justify-start md:items-start">
           <h1 className="text-[4rem]  text-center md:text-left font-cormorant font-bold leading-tight mb-8">
             Queen & <br /> Double Bedroom
           </h1>

@@ -52,7 +52,7 @@ const Navbar = () => {
           <ul key={index} className="md:flex">
             <li
               className={`uppercase nav-link-underline-white relative text-[12px] font-medium py-2 px-4 md:p-0 ${
-                isScrolled ? "text-black lg:nav-link-underline-black my-5 " : "lg:text-white hover:text-orange-500 ease-in-out duration-300"
+                isScrolled ? "text-black lg:nav-link-underline-black my-5 " : "lg:text-white ease-in-out duration-300"
               }`}
             >
               <a
